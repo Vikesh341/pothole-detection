@@ -3,6 +3,7 @@ import csv
 import os
 import sqlite3
 import cv2
+from src import database
 from datetime import datetime
 from ultralytics import YOLO
 
@@ -17,7 +18,7 @@ uploaded_file = st.file_uploader(
 )
 location = st.text_input(
     "Enter Location",
-    placeholder="e.g. Chandi, Bihar"
+    placeholder="e.g. patna, Bihar"
 )
 
 if uploaded_file:
