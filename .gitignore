@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+venv/
+
+# macOS
+.DS_Store
+
+# Temporary files
+temp_image.jpg
+
+# Generated reports
+reports/
+reports.csv
+reports.db
+
+# Training outputs
+runs/
+
+# Python environment files
+.pytest_cache/
+.mypy_cache/yolo11n.pt
+dataset/
+
+yolo11n.pt
