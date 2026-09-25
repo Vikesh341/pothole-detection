@@ -3,7 +3,7 @@ import csv
 import os
 import sqlite3
 import cv2
-from src import database
+import database
 from datetime import datetime
 from ultralytics import YOLO
 
