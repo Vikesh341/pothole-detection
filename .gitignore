@@ -12,6 +12,9 @@ venv/
 # Temporary files
 temp_image.jpg
 
+# Dataset
+dataset/
+
 # Generated reports
 reports/
 reports.csv
@@ -20,9 +23,9 @@ reports.db
 # Training outputs
 runs/
 
+# YOLO base model
+yolo11n.pt
+
 # Python environment files
 .pytest_cache/
-.mypy_cache/yolo11n.pt
-dataset/
-
-yolo11n.pt
+.mypy_cache/
