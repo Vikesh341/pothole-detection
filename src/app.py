@@ -57,17 +57,15 @@ if uploaded_file:
             image_area = image_width * image_height
 
             area_percentage = (box_area / image_area) * 100
-
             if area_percentage < 5:
-              severity = "Low"
+                severity = "Low"
             elif area_percentage < 15:
-              severity = "Medium"
-        else:
-              severity = "High"
-              detected_data[-1]["area"] = area_percentage
-              detected_data[-1]["severity"] = severity
+                severity = "Medium"
+            else:
+                severity = "High"
 
-
+            detected_data[-1]["area"] = area_percentage
+            detected_data[-1]["severity"] = severity
         st.write("Area:", round(area_percentage, 2), "%")
         st.write("Estimated Severity:", severity)
         annotated_image = result.plot()
